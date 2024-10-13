@@ -17,6 +17,18 @@
     "limits": "cpp",
     "new": "cpp",
     "type_traits": "cpp",
-    "typeinfo": "cpp"
+    "typeinfo": "cpp",
+    "vector": "cpp",
+    "array": "cpp",
+    "unordered_map": "cpp",
+    "fstream": "cpp",
+    "functional": "cpp",
+    "istream": "cpp",
+    "ostream": "cpp",
+    "sstream": "cpp",
+    "stdexcept": "cpp",
+    "streambuf": "cpp",
+    "tuple": "cpp",
+    "utility": "cpp"
   }
 }
