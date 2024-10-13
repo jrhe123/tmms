@@ -42,7 +42,7 @@ bool StringUtils::EndsWith(const string &s, const string &sub)
 
 string StringUtils::FilePath(const std::string &path)
 {
-  auto pos = path.find_last_of('/\\');
+  auto pos = path.find_last_of("/\\");
   if (pos != std::string::npos)
   {
     // found
@@ -56,7 +56,7 @@ string StringUtils::FilePath(const std::string &path)
 
 string StringUtils::FileNameExt(const std::string &path)
 {
-  auto pos = path.find_last_of('/\\');
+  auto pos = path.find_last_of("/\\");
   if (pos != std::string::npos)
   {
     // found
@@ -72,7 +72,7 @@ string StringUtils::FileNameExt(const std::string &path)
 string StringUtils::FileName(const std::string &path)
 {
   string file_name = FileNameExt(path);
-  auto pos = file_name.find_last_of('.');
+  auto pos = file_name.find_last_of(".");
   if (pos != std::string::npos)
   {
     // found
@@ -87,7 +87,7 @@ string StringUtils::FileName(const std::string &path)
 string StringUtils::Extension(const std::string &path)
 {
   string file_name = FileNameExt(path);
-  auto pos = file_name.find_last_of('.');
+  auto pos = file_name.find_last_of(".");
   if (pos != std::string::npos)
   {
     // found

@@ -12,6 +12,11 @@
 4. cd bin/sbin/
 5. ./tmms
 
+###
+- cd build
+- make
+- cd build/src/base/
+- ./base_test
 
 ### imooc
 - https://git.imooc.com/coding-857

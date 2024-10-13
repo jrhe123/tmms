@@ -155,6 +155,32 @@ tmms/fast:
 	$(MAKE) -f src/main/CMakeFiles/tmms.dir/build.make src/main/CMakeFiles/tmms.dir/build
 .PHONY : tmms/fast
 
+#=============================================================================
+# Target rules for targets named base
+
+# Build rule for target.
+base: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 base
+.PHONY : base
+
+# fast build rule for target.
+base/fast:
+	$(MAKE) -f src/base/CMakeFiles/base.dir/build.make src/base/CMakeFiles/base.dir/build
+.PHONY : base/fast
+
+#=============================================================================
+# Target rules for targets named base_test
+
+# Build rule for target.
+base_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 base_test
+.PHONY : base_test
+
+# fast build rule for target.
+base_test/fast:
+	$(MAKE) -f src/base/CMakeFiles/base_test.dir/build.make src/base/CMakeFiles/base_test.dir/build
+.PHONY : base_test/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -168,6 +194,8 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... tmms"
+	@echo "... base"
+	@echo "... base_test"
 .PHONY : help
 
 
